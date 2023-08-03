@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <title>Farming News</title>
+  
+  <style>
+    .fullTable {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: separate;
+    }
+
+    .fullTable th {
+      border: 0px 2px solid rgb(5, 50, 75);
+      border-radius: 4px;
+      padding: 12px;
+    }
+
+    .fullTable td {
+
+      border-radius: 2px;
+    }
+
+    .fullTable tbody tr {
+      background-color: rgb(196, 204, 211);
+      color: #10094F;
+      border-bottom: 3px solid #10094F;
+    }
+
+    .fullTable tr:nth-child(even) {
+      background-color: #f8fdf4;
+    }
+
+    .fullTable tr:hover {
+      background-color: rgb(234, 208, 243);
+    }
+
+    .fullTable th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: center;
+
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <header class="text-gray-600 body-font">
+    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+      <div>
+        <img src="../Images/icon.jpg" alt="" width="100px" height="100px">
+      </div>
+      <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+        <span class="ml-3 text-xl">Kisan Buddy</span>
+      </a>
+      <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 hover:text-gray-900" href="./HomeLogPage.html">Home</a>
+        <a class="mr-5 hover:text-gray-900" href="./Products_page.html">Products</a>
+        <a class="mr-5 hover:text-gray-900"
+          style="background-color: rgb(164, 235, 235) ; color:  #10094F;padding: 3px 9px;border-radius: 12px;"
+          href="./News_page.html">News</a>
+        <a class="mr-5 hover:text-gray-900">Profile</a>
+      </nav>
+      <button style="border:2px solid green ; border-radius:70px;padding: 3px 12px;margin: 7px;"><a
+          href="./HomePage.html">Logout</a>
+      </button>
+    </div>
+  </header>
+  <!-- End Navagation Bar -->
+
+  <section class="text-gray-400 bg-gray-900 body-font overflow-hidden"
+    style="display: flex;flex-direction: column; align-items: center;justify-content: center;">
+
+    <div class="lg:w-1/2 w-full lg:pr-10 lg:py-6 mb-6 lg:mb-0">
+      <div style="margin:0px 12px;">
+        <div class="flex border-t border-gray-800 py-2">
+          <span class="ml-auto text-white">
+            Date : | Todays Date |</span>
+        </div>
+        <!-- change material by java code -->
+        <h1 class="text-white text-3xl title-font font-medium mb-4">Header of the News</h1>
+        <div class="flex mb-4">
+          <a class="flex-grow text-indigo-400 border-b-2 border-indigo-500 py-2 text-lg px-1">Description</a>
+        </div>
+        <p class="leading-relaxed mb-4">Fam locavore kickstarter distillery.<br>
+          Mixtape chillwave tumeric sriracha taximy
+          chia microdosing tilde DIY. XOXO fam iligo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1
+          seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p>
+      </div>
+
+    </div>
+    <div class="container px-5 py-24 mx-auto" style="width: 101%;">
+      <div class="lg:w-2/3 w-full mx-auto overflow-auto" style="width: 80%;">
+        <h1 class="text-white text-3xl title-font font-medium mb-4" style="text-align: center; padding:1.5%; ">News Till
+          Todays</h1>
+        <!-- color: #c3fee2; -->
+        <table class="table-auto text-center fullTable">
+          <thead>
+            <tr style="margin: 20px 0px;"> <!--border-bottom: 3px solid #10094F; -->
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Index</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">News</th>
+              <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">Date</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <!-- Change by the Java Code -->
+
+            <tr>
+              <td class="px-4 py-3">1</td>
+              <td class="px-4 py-3">
+                <h5>Title of News</h5><br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium minus nobis ducimus expedita ex,
+                excepturi ea sunt hic soluta animi officia eveniet ipsa voluptatibus ipsum eligendi possimus cum.
+                Distinctio, nihil?
+              </td>
+              <td class="px-4 py-3">12 Augest 2022</td>
+              <!-- <td class="px-4 py-3"><button style="background-color: aquamarine; padding: 2px;width: 100px;" >
+                <i class="fa-eye"></i></button></td> -->
+            </tr>
+
+            <!-- Change by the Java Code -->
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <div>
+          <img src="../Images/icon.jpg" alt="" width="70px" height="100px">
+        </div>
+        <span class="ml-3 text-xl">Kisan Buddy</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">©
+        2022 Kisan Buddy —
+        <a href="https://twitter.com/knyttneve" class="text-gray-600 ml-1" rel="noopener noreferrer"
+          target="_blank">@kisanBuddy</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5"
+            viewBox="0 0 24 24">
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z">
+            </path>
+          </svg>
+        </a>
+        <a class="ml-3 text-gray-500">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            class="w-5 h-5" viewBox="0 0 24 24">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
+        </a>
+      </span>
+    </div>
+  </footer>
+  <!-- End Footer  -->
+</body>
+
+</html>

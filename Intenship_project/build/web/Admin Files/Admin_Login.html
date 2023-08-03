@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Admin Login kisan Application</title>
+    <style>
+        section {
+            margin-top: 7rem;
+            align-items: center;
+        }
+
+        div {
+            width: 50%;
+            height: 40%;
+            background-color: aquamarine;
+            border: 2px solid blue;
+            border-radius: 15px;
+        }
+
+        .just-center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        label{
+            font-size: 21px;
+        }
+        
+        input {
+            width: 90%;
+            border: 2px solid #000;
+            border-radius: 12px;
+            padding: 3px;
+            padding-left: 12px;
+            margin: 9px 12px;
+        }
+
+        #submit {
+            margin: 12px;
+            border: 2px solid #000;
+            border-radius: 12px;
+            width: 50%;
+            height: 30px;
+        }
+        h3{
+            font-family:'Courier New';
+            font-size:21px;
+            color:rgb(43, 0, 99);
+        }
+    </style>
+</head>
+<link rel="stylesheet" href="design.css">
+
+
+<body>
+    <h1 style="word-wrap:break-word ;text-align:center;">kisan Application</h1>
+    <!-- <fieldset > -->
+    <section class="just-center">
+        <div class="just-center">
+            <form action="../AdminLog" method="post" id="myform" class="just-center">
+                <h3>Admin Login </h3>
+                <label> UserName </label>
+                <input type="text" name="AUserN" placeholder="UserName"  required/>
+
+                <label> Password </label>
+                <input type="password" name="APass" placeholder="Password" required />
+
+                <input type="submit" id="submit" value="Login">
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+
+</body>
+
+</html>
